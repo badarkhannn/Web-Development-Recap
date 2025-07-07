@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* This is the default box-sizing */
+            /* box-sizing: content-box; */
+            /* This will include padding and border in the width and height */
+            box-sizing: border-box;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .boxvh {
+            width: 50vw; /* 50% of the viewport height */
+            height: 50vh; /* 50% of the viewport height */
+            background-color: blue;
+            /* This will include padding and border in the width and height */
+            box-sizing: border-box;
+            margin: auto;
+            color: white;
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur.</div>
+    <div class="boxvh">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, beatae.</div>
+</body>
+</html>
